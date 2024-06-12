@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title','Ecommerce Laravel || Register Page')
+@section('title','Chefzen || Register Page')
 
 @section('main-content')
 	<!-- Breadcrumbs -->

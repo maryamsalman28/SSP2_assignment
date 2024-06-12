@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'c83957de829ea2bf0b7978e09e8dcd8cbf120c2b',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -464,9 +464,9 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'c83957de829ea2bf0b7978e09e8dcd8cbf120c2b',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -500,9 +500,9 @@
             'dev_requirement' => false,
         ),
         'laravel/ui' => array(
-            'pretty_version' => 'v3.4.6',
-            'version' => '3.4.6.0',
-            'reference' => '65ec5c03f7fee2c8ecae785795b829a15be48c2c',
+            'pretty_version' => 'v4.5.2',
+            'version' => '4.5.2.0',
+            'reference' => 'c75396f63268c95b053c8e4814eb70e0875e9628',
             'type' => 'library',
             'install_path' => __DIR__ . '/../laravel/ui',
             'aliases' => array(),

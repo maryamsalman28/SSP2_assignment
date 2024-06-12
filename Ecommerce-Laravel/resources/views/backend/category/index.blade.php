@@ -43,8 +43,7 @@
                     </td>
                     <td>
                         @if($category->photo)
-                            <img src="{{$category->photo}}" class="img-fluid" style="max-width:80px" alt="{{$category->photo}}">
-                        @else
+                        <img class="object-cover w-full h-full" src="{{ $category->getThumbnailUrl() ?? asset('images/default-placeholder.png') }}" alt="{{ $category->title }}">                        @else
                             <img src="{{asset('backend/img/thumbnail-default.jpg')}}" class="img-fluid" style="max-width:80px" alt="avatar.png">
                         @endif
                     </td>

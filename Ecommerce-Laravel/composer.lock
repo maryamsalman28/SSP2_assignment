@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "04b3c61beb68f2c30ab25592cb1d77ac",
+    "content-hash": "ce9ab98ffc0c725db05ef966a21708bd",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2029,32 +2029,34 @@
         },
         {
             "name": "laravel/ui",
-            "version": "v3.4.6",
+            "version": "v4.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/ui.git",
-                "reference": "65ec5c03f7fee2c8ecae785795b829a15be48c2c"
+                "reference": "c75396f63268c95b053c8e4814eb70e0875e9628"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/ui/zipball/65ec5c03f7fee2c8ecae785795b829a15be48c2c",
-                "reference": "65ec5c03f7fee2c8ecae785795b829a15be48c2c",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/c75396f63268c95b053c8e4814eb70e0875e9628",
+                "reference": "c75396f63268c95b053c8e4814eb70e0875e9628",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "^8.42|^9.0",
-                "illuminate/filesystem": "^8.42|^9.0",
-                "illuminate/support": "^8.82|^9.0",
-                "illuminate/validation": "^8.42|^9.0",
-                "php": "^7.3|^8.0"
+                "illuminate/console": "^9.21|^10.0|^11.0",
+                "illuminate/filesystem": "^9.21|^10.0|^11.0",
+                "illuminate/support": "^9.21|^10.0|^11.0",
+                "illuminate/validation": "^9.21|^10.0|^11.0",
+                "php": "^8.0",
+                "symfony/console": "^6.0|^7.0"
             },
             "require-dev": {
-                "orchestra/testbench": "^6.23|^7.0"
+                "orchestra/testbench": "^7.35|^8.15|^9.0",
+                "phpunit/phpunit": "^9.3|^10.4|^11.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.x-dev"
+                    "dev-master": "4.x-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -2084,9 +2086,9 @@
                 "ui"
             ],
             "support": {
-                "source": "https://github.com/laravel/ui/tree/v3.4.6"
+                "source": "https://github.com/laravel/ui/tree/v4.5.2"
             },
-            "time": "2022-05-20T13:38:08+00:00"
+            "time": "2024-05-08T18:07:10+00:00"
         },
         {
             "name": "league/commonmark",

@@ -121,15 +121,7 @@
                         @endphp
                         <img class="default-img" src="{{$photos[0]}}" alt="{{$photos[0]}}">
                         <img class="hover-img" src="{{$photos[0]}}" alt="{{$photos[0]}}">
-                        @if($product->stock <= 0)
-                            <span class="out-of-stock">Sold Out</span>
-                        @elseif($product->condition == 'new')
-                            <span class="new">New</span>
-                        @elseif($product->condition == 'hot')
-                            <span class="hot">Hot</span>
-                        @else
-                            <span class="price-dec">{{$product->discount}}% Off</span>
-                        @endif
+                        
                     </a>
                     <div class="button-head">
                         <div class="product-action">
@@ -171,19 +163,7 @@
             @if($featured)
                 @foreach($featured as $data)
                     <!-- Single Banner  -->
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="single-banner">
-                            @php
-                                $photo=explode(',',$data->photo);
-                            @endphp
-                            <img src="{{$photo[0]}}" alt="{{$photo[0]}}">
-                            <div class="content">
-                                <p>{{$data->cat_info['title']}}</p>
-                                <h3>{{$data->title}} <br>Up to<span> {{$data->discount}}%</span></h3>
-                                <a href="{{route('product-detail',$data->slug)}}">Shop Now</a>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <!-- /End Single Banner  -->
                 @endforeach
             @endif
@@ -192,63 +172,7 @@
 </section>
 <!-- End Midium Banner -->
 
-<!-- Start Most Popular -->
-<div class="product-area most-popular section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title">
-                    <h2>Hot Item</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="owl-carousel popular-slider">
-                    @foreach($product_lists as $product)
-                        @if($product->condition=='hot')
-                            <!-- Start Single Product -->
-                        <div class="single-product">
-                            <div class="product-img">
-                                <a href="{{route('product-detail',$product->slug)}}">
-                                    @php
-                                        $photo=explode(',',$product->photo);
-                                    // dd($photo);
-                                    @endphp
-                                    <img class="default-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
-                                    <img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
-                                    {{-- <span class="out-of-stock">Hot</span> --}}
-                                </a>
-                                <div class="button-head">
-                                    <div class="product-action">
-                                        <a data-toggle="modal" data-target="#{{$product->id}}" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                        <a title="Wishlist" href="{{route('add-to-wishlist',$product->slug)}}" ><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
-                                    </div>
-                                    <div class="product-action-2">
-                                        <a href="{{route('add-to-cart',$product->slug)}}">Add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <h3><a href="{{route('product-detail',$product->slug)}}">{{$product->title}}</a></h3>
-                                <div class="product-price">
-                                    <span class="old">${{number_format($product->price,2)}}</span>
-                                    @php
-                                    $after_discount=($product->price-($product->price*$product->discount)/100)
-                                    @endphp
-                                    <span>${{number_format($after_discount,2)}}</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Product -->
-                        @endif
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Most Popular Area -->
+
 
 <!-- Start Shop Home List  -->
 <section class="shop-home-list section">
@@ -304,39 +228,47 @@
 
 <!-- Start Shop Services Area -->
 <section class="shop-services section home">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-12">
-                <!-- Start Single Service -->
-                <div class="single-service">
-                    <i class="ti-rocket"></i>
-                    <h4>Free shiping</h4>
-                    <p>Orders over $100</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Start Single Service -->
+                    <div class="single-service">
+                        <i class="ti-rocket"></i>
+                        <h4>Free shipping</h4>
+                        <p>Orders over $100</p>
+                    </div>
+                    <!-- End Single Service -->
                 </div>
-                <!-- End Single Service -->
-            </div>
-            
-            <div class="col-lg-3 col-md-6 col-12">
-                <!-- Start Single Service -->
-                <div class="single-service">
-                    <i class="ti-lock"></i>
-                    <h4>Sucure Payment</h4>
-                    <p>100% secure payment</p>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Start Single Service -->
+                    <div class="single-service">
+                        <i class="ti-reload"></i>
+                        <h4>Healthy Food</h4>
+                        <p>Healthiest food options</p>
+                    </div>
+                    <!-- End Single Service -->
                 </div>
-                <!-- End Single Service -->
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-                <!-- Start Single Service -->
-                <div class="single-service">
-                    <i class="ti-tag"></i>
-                    <h4>Best Price</h4>
-                    <p>Guaranteed price</p>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Start Single Service -->
+                    <div class="single-service">
+                        <i class="ti-lock"></i>
+                        <h4>Secure Payment</h4>
+                        <p>100% secure payment</p>
+                    </div>
+                    <!-- End Single Service -->
                 </div>
-                <!-- End Single Service -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Start Single Service -->
+                    <div class="single-service">
+                        <i class="ti-tag"></i>
+                        <h4>Best Price</h4>
+                        <p>Guaranteed price</p>
+                    </div>
+                    <!-- End Single Service -->
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 <!-- End Shop Services Area -->
 
 @include('frontend.layouts.newsletter')
@@ -394,13 +326,7 @@
                                                 </div>
                                                 <a href="#"> ({{$rate_count}} customer review)</a>
                                             </div>
-                                            <div class="quickview-stock">
-                                                @if($product->stock >0)
-                                                <span><i class="fa fa-check-circle-o"></i> {{$product->stock}} in stock</span>
-                                                @else
-                                                <span><i class="fa fa-times-circle-o text-danger"></i> {{$product->stock}} out stock</span>
-                                                @endif
-                                            </div>
+                                            
                                         </div>
                                         @php
                                             $after_discount=($product->price-($product->price*$product->discount)/100);
@@ -409,14 +335,14 @@
                                         <div class="quickview-peragraph">
                                             <p>{!! html_entity_decode($product->summary) !!}</p>
                                         </div>
-                                        @if($product->size)
+                                        @if($product->portion_size)
                                             <div class="size">
                                                 <div class="row">
                                                     <div class="col-lg-6 col-12">
-                                                        <h5 class="title">Size</h5>
+                                                        <h5 class="title">Portion Size</h5>
                                                         <select>
                                                             @php
-                                                            $sizes=explode(',',$product->size);
+                                                            $sizes=explode(',',$product->portion_size);
                                                             // dd($sizes);
                                                             @endphp
                                                             @foreach($sizes as $size)

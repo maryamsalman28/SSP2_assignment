@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Models;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Facades\Storage;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -50,4 +52,12 @@ class Category extends Model
         }
         return 0;
     }
+
+    public function getThumbnailUrl()
+    {
+        $isUrl = str_contains($this->image, 'http');
+        return ($isUrl) ? $this->image : Storage::disk('public')->url($this->image);
+    }
+
 }
+

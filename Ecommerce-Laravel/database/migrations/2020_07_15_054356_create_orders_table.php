@@ -36,6 +36,7 @@ class CreateOrdersTable extends Migration
             $table->text('address1');
             $table->text('address2')->nullable();
             $table->timestamps();
+
         });
     }
 

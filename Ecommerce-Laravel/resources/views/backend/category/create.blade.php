@@ -41,7 +41,7 @@
 
         <div class="form-group">
           <label for="inputPhoto" class="col-form-label">Photo</label>
-          <input id="inputPhoto" type="file" name="photo" class="form-control">
+          <input id="inputPhoto" type="text" name="photo" class="form-control">
           @error('photo')
           <span class="text-danger">{{$message}}</span>
           @enderror

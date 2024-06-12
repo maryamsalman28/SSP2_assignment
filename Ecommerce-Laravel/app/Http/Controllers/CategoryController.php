@@ -42,7 +42,7 @@ class CategoryController extends Controller
         $this->validate($request, [
             'title' => 'string|required',
             'summary' => 'string|nullable',
-            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Update the validation rule for photo
+            'photo' => 'nullable|string', // Update the validation rule for photo
             'status' => 'required|in:active,inactive',
             'is_parent' => 'sometimes|in:1',
             'parent_id' => 'nullable|exists:categories,id',
@@ -99,7 +99,7 @@ class CategoryController extends Controller
         $this->validate($request, [
             'title' => 'string|required',
             'summary' => 'string|nullable',
-            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Update the validation rule for photo
+            'photo' => 'nullable|string', // Update the validation rule for photo
             'status' => 'required|in:active,inactive',
             'is_parent' => 'sometimes|in:1',
             'parent_id' => 'nullable|exists:categories,id',

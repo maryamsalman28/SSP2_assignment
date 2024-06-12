@@ -15,8 +15,8 @@ class ComposerStaticInite1e401b50aa9a3fb0ce94c1e216dc881
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
-        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
+        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
@@ -182,6 +182,8 @@ class ComposerStaticInite1e401b50aa9a3fb0ce94c1e216dc881
             'Doctrine\\Common\\Lexer\\' => 22,
             'Dflydev\\DotAccessData\\' => 22,
             'DeepCopy\\' => 9,
+            'Database\\Seeders\\' => 17,
+            'Database\\Factories\\' => 19,
         ),
         'C' => 
         array (
@@ -582,6 +584,14 @@ class ComposerStaticInite1e401b50aa9a3fb0ce94c1e216dc881
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'Database\\Seeders\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/database/seeders',
+        ),
+        'Database\\Factories\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/database/factories',
+        ),
         'Cron\\' => 
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
@@ -671,6 +681,7 @@ class ComposerStaticInite1e401b50aa9a3fb0ce94c1e216dc881
         'App\\Models\\ProductReview' => __DIR__ . '/../..' . '/app/Models/ProductReview.php',
         'App\\Models\\Settings' => __DIR__ . '/../..' . '/app/Models/Settings.php',
         'App\\Models\\Shipping' => __DIR__ . '/../..' . '/app/Models/Shipping.php',
+        'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Models\\Wishlist' => __DIR__ . '/../..' . '/app/Models/Wishlist.php',
         'App\\Notifications\\StatusNotification' => __DIR__ . '/../..' . '/app/Notifications/StatusNotification.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
@@ -786,7 +797,6 @@ class ComposerStaticInite1e401b50aa9a3fb0ce94c1e216dc881
         'Carbon\\TranslatorImmutable' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/TranslatorImmutable.php',
         'Carbon\\TranslatorStrongTypeInterface' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/TranslatorStrongTypeInterface.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'CouponSeeder' => __DIR__ . '/../..' . '/database/seeds/CouponSeeder.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -797,7 +807,7 @@ class ComposerStaticInite1e401b50aa9a3fb0ce94c1e216dc881
         'Cron\\HoursField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
-        'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
+        'Database\\Seeders\\UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeders/UsersTableSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
         'DateException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
         'DateInvalidOperationException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php',
@@ -5424,7 +5434,6 @@ class ComposerStaticInite1e401b50aa9a3fb0ce94c1e216dc881
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/type/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
-        'SettingTableSeeder' => __DIR__ . '/../..' . '/database/seeds/SettingTableSeeder.php',
         'Spatie\\Backtrace\\Arguments\\ArgumentReducers' => __DIR__ . '/..' . '/spatie/backtrace/src/Arguments/ArgumentReducers.php',
         'Spatie\\Backtrace\\Arguments\\ProvidedArgument' => __DIR__ . '/..' . '/spatie/backtrace/src/Arguments/ProvidedArgument.php',
         'Spatie\\Backtrace\\Arguments\\ReduceArgumentPayloadAction' => __DIR__ . '/..' . '/spatie/backtrace/src/Arguments/ReduceArgumentPayloadAction.php',
@@ -6700,7 +6709,6 @@ class ComposerStaticInite1e401b50aa9a3fb0ce94c1e216dc881
         'UniSharp\\LaravelFilemanager\\LfmUploadValidator' => __DIR__ . '/..' . '/unisharp/laravel-filemanager/src/LfmUploadValidator.php',
         'UniSharp\\LaravelFilemanager\\Middlewares\\CreateDefaultFolder' => __DIR__ . '/..' . '/unisharp/laravel-filemanager/src/Middlewares/CreateDefaultFolder.php',
         'UniSharp\\LaravelFilemanager\\Middlewares\\MultiUser' => __DIR__ . '/..' . '/unisharp/laravel-filemanager/src/Middlewares/MultiUser.php',
-        'UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UsersTableSeeder.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Webmozart\\Assert\\InvalidArgumentException' => __DIR__ . '/..' . '/webmozart/assert/src/InvalidArgumentException.php',
